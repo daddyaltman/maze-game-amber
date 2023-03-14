@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\Character3.cs" />
     <Compile Include="Assets\Scripts\IDamagable.cs" />
     <Compile Include="Assets\Scripts\Trap2.cs" />
+    <Compile Include="Assets\Scripts\TrapsContainer.cs" />
     <Compile Include="Assets\Scripts\Character2.cs" />
     <Compile Include="Assets\Scripts\ActiveCharacter.cs" />
     <Compile Include="Assets\Scripts\Character1.cs" />
