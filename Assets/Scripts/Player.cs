@@ -31,12 +31,18 @@ public class Player : MonoBehaviour
         currentCharacter = activeCharacter;
         
         }
+      else
+        {
+            SwitchChar();
+        }
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        Debug.Log("player colided with trap");
+        if (collision.gameObject.CompareTag("Trap"))
         {
+            Debug.Log("player colided with trap");
             currentCharacter.ApplyDamage(collision.gameObject.GetComponent<IDamagable>());
         }
     }
