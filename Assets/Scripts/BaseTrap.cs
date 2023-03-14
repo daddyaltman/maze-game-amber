@@ -9,6 +9,7 @@ public class BaseTrap : MonoBehaviour
     public void SpawnTrap()
     {
         var ActiveTrap = activeTraps[Random.Range(0, activeTraps.Length)];
+        Debug.Log(ActiveTrap);
         ActiveTrap.gameObject.SetActive(true);
         currentTrap.gameObject.SetActive(false);
         currentTrap = ActiveTrap;
@@ -23,8 +24,8 @@ public class BaseTrap : MonoBehaviour
         if (collision.gameObject.layer == 7)
         {
             Debug.Log("hit trap");
-            SpawnTrap();
             currentTrap.ApplyDamage(collision.gameObject.GetComponent<IDamagable>());
+            currentTrap.Die();
         }
 
 

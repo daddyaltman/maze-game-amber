@@ -4,11 +4,8 @@ using UnityEngine;
 
 public abstract class ActiveTrap : MonoBehaviour, IDamagable
 {
-   // public LayerMask whatIDamage;
+    public LayerMask whatIDamage;
 
-   // public Rigidbody2D body;
-    float horizontal;
-    float vertical;
 
     public void Die()
     {
