@@ -11,7 +11,9 @@ public abstract class ActiveCharacter : MonoBehaviour, IDamagable
     protected int maxHp;
     protected int currentHp;
 
-   
+    public LayerMask whatIDamage;
+
+
     private void Update()
     {
         Movment();
